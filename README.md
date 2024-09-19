@@ -1,12 +1,13 @@
-#AphroFront 
+# AphroFront 
 
-데사 스터디 아프론T뒷태 백업용 레포토리지 입니다 
+### 데사 스터디 아프론T뒷태 백업용 레포토리지 입니다 
 
 
 --
 
-https://www.inflearn.com/course/html-%EA%B8%B0%EB%B3%B8/dashboard
-https://opentutorials.org/module/1892
+[기본을 확실히!! HTML의 모든 것](https://www.inflearn.com/course/html-%EA%B8%B0%EB%B3%B8/dashboard)
+
+[생활코딩](https://opentutorials.org/module/1892)
 
 [[html/css] HTML 기본 문법과 기본 테그](https://velog.io/@day024/htmlcss-HTML-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95%EA%B3%BC-%EA%B8%B0%EB%B3%B8-%ED%85%8C%EA%B7%B8)
 
