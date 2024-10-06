@@ -1,5 +1,11 @@
+body {
+  padding-top: 75px; /* 고정된 header와 겹치는 것을 방지 */
+  padding-bottom: 75px; /* 고정된 bottom-tabs와 겹치는 것을 방지 */
+}
+
+/* Header */
 .header {
-    position: fixed; /*고정*/
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -9,14 +15,9 @@
     align-items: center;
 }
 
-body{
-    padding-top: 75px;
-    padding-bottom: 75px; /*네비게이션 바와 겹치는 것 방지*/
-  }
 
-
-/*채팅방설정*/
-.friend { /*컨테이너*/
+/*사진창관련*/
+.friend { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,6 +71,8 @@ body{
     margin-right: 10px; /* 이름과 시간 사이의 간격 */
 }
 
+
+/*하단 nav에 대한 수정*/
 .bottom-tabs {
     position: fixed;
     bottom: 0;
@@ -93,5 +96,5 @@ body{
     flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
     align-items: center;
     text-decoration: none; 
-    color: black; /* 텍스트 색상 */
+    color: black;
 }
