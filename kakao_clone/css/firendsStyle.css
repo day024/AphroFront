@@ -96,5 +96,9 @@ body{ /*nav고정으로 겹치는 것 방지*/
   display: flex; 
   align-items: center;
   justify-content: space-between;
-  width: 50px;
+  width: 100%;
+}
+
+.friends__pongheader svg {
+  width: 30px;
 }
