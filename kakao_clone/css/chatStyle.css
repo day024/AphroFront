@@ -1,0 +1,140 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+
+.back-button {
+    margin-right: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #333;
+}
+
+.chat-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chat-container {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/*채팅창 내용*/
+.chat-message {
+    margin: 10px 0;
+}
+
+.you {
+    align-self: flex-start;
+}
+
+.me {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 75%;
+    display: inline-block;
+}
+
+.you .message {
+    background-color: #E1F5FE;
+    color: #000;
+}
+
+.me .message {
+    background-color: #C8E6C9;
+    color: #000;
+}
+
+.time {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+/*채팅 입력창*/
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1; 
+    height: 50px; 
+    padding: 10px; 
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    margin-right: 10px; 
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/*아이콘 사이즈 임의 정함 추후 수정*/
+.size-5 {
+    width: 20px; 
+    height: 20px; 
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.chat-input {
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    background-color: white; 
+    z-index: 1000;
+}

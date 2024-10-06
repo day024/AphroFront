@@ -4,68 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to kakotalk</title>
+    <title>카카오톡 로그인</title>
+    <link rel="stylesheet" href="../css/loginStyle.css">
 </head>
 
 <body>
-
-    <!-- 카카오톡 로그인 화면 -->
-    <div style="text-align: center;">
-        <br>
-        <br>
-        <!-- 카카오톡 로고 -->
-        <h2>카카오톡을 시작합니다</h2>
-
-        <!-- 로그인 폼 -->
-        <form action="/login" method="post">
-            <!-- 이메일/전화번호 입력 -->
-            <div>
-                <label for="emailOrPhone"></label>
+    <div class="container">
+        <div class="logo">
+            <h2>카카오톡을 시작합니다</h2>
+        </div>
+        <form action="#" method="post" class="login-form">
+            <div class="input-group">
                 <input type="text" id="emailOrPhone" name="emailOrPhone" required placeholder="이메일 또는 전화번호">
             </div>
-            <br>
-            <!-- 비밀번호 입력 -->
-            <div>
-                <label for="password"></label>
+            <div class="input-group">
                 <input type="password" id="password" name="password" required placeholder="비밀번호">
             </div>
-            <br>
-            <!-- 로그인 버튼 -->
-            <div>
-                <button type="submit">로그인</button>
+            <div class="button-group">
+                <button type="submit" class="login-btn"><a href="main.html">로그인</a></button>
+            </div><!--나중에 수정해야함-->
+            <div class="button-group">
+                <button type="button" class="signup-btn">새로운 카카오계정 만들기</button>
             </div>
-            <!-- 새계정 생성 버튼  -->
-            <div></div>
-            <button type="submit">새로운 카카오계정 만들기</button>
+        </form>
+        <div class="additional-links">
+            <a href="#">카카오계정 또는 비밀번호 찾기</a>
+        </div>
     </div>
-    </form>
-    <br>
-    <br>
-    <!-- 추가 링크 -->
-    <div style="text-align: center">
-        <a href="#">카카오계정 또는 비빌번호 찾기</a>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    </div>
-
 </body>
 
 </html>

@@ -1,0 +1,100 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{ /*nav고정으로 겹치는 것 방지*/
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.friend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .friend .friend__profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 38%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .friend__profile {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .friend .friend__column {
+    display: flex;
+    align-items: center;
+  }
+  
+  .friend__column .friend__profile {
+    margin-right: 20px;
+  }
+  
+  /* 친구이름- 상태창과 거리위해 margin-bottom */
+  .friend__content .friend__name {
+    display: flex;
+    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .friend__content {
+    font-size: 14px;
+  }
+  
+  .friend__content .friend__status,
+  .friend .chat__timestamp {
+    font-size: 12px;
+  }
+
+  .bottom-tabs {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    display: flex; 
+    justify-content: center; /* 전체 버튼들을 수평 중앙으로 정렬 */
+    align-items: center;
+    padding: 10px 0; 
+}
+
+.bottom-tabs button {
+    flex-grow: 1; /* 버튼 간의 간격을 동일하게 유지 */
+    text-align: center; 
+}
+
+.bottom-tabs a {
+    display: flex;
+    flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
+    align-items: center;
+    text-decoration: none; 
+    color: black; /* 텍스트 색상 */
+}
+
+
+.friends__star, .friends__channel, .friends__brithday {
+  border-bottom: 1px solid #e0e0e0; /* 하단 경계선 */
+  padding-bottom: 10px;
+  margin-bottom: 20px; /* 다음 섹션과 간격 */
+}
+
+.friends__pongheader{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  width: 50px;
+}

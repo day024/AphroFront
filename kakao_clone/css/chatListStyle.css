@@ -1,0 +1,97 @@
+.header {
+    position: fixed; /*고정*/
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    padding-top: 75px;
+    padding-bottom: 75px; /*네비게이션 바와 겹치는 것 방지*/
+  }
+
+
+/*채팅방설정*/
+.friend { /*컨테이너*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .friend .friend__profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 38%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .friend .friend__column {
+    display: flex;
+    align-items: center;
+  }
+  
+  .friend__column .friend__profile {
+    margin-right: 20px;
+  }
+
+  .friend__content{
+    font-size: 14px;
+    width: 100%; 
+  }
+  
+  .friend__content .friend__time{
+    font-size: 12px;
+  }
+  
+  .friend__column {
+    display: flex; 
+    width: 100%; 
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.friend__content {
+    flex-direction: column; /* 수직 방향으로 배치 */
+}
+
+.friend__info {
+    display: flex;
+    justify-content: space-between; /* 이름과 시간을 양 끝으로 배치 */
+    width: 100%; 
+}
+
+
+.friend__name {
+    margin-right: 10px; /* 이름과 시간 사이의 간격 */
+}
+
+.bottom-tabs {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    display: flex; 
+    justify-content: center; /* 전체 버튼들을 수평 중앙으로 정렬 */
+    align-items: center;
+    padding: 10px 0; 
+}
+
+.bottom-tabs button {
+    flex-grow: 1; /* 버튼 간의 간격을 동일하게 유지 */
+    text-align: center; 
+}
+
+.bottom-tabs a {
+    display: flex;
+    flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
+    align-items: center;
+    text-decoration: none; 
+    color: black; /* 텍스트 색상 */
+}
