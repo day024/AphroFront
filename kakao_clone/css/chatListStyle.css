@@ -1,100 +1,52 @@
-body {
-  padding-top: 75px; /* 고정된 header와 겹치는 것을 방지 */
-  padding-bottom: 75px; /* 고정된 bottom-tabs와 겹치는 것을 방지 */
-}
-
-/* Header */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 /*사진창관련*/
-.friend { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .friend .friend__profile {
-    width: 50px;
-    height: 50px;
-    border-radius: 38%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.friend .friend__profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 38%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .friend .friend__column {
-    display: flex;
-    align-items: center;
-  }
-  
-  .friend__column .friend__profile {
-    margin-right: 20px;
-  }
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
 
-  .friend__content{
-    font-size: 14px;
-    width: 100%; 
-  }
-  
-  .friend__content .friend__time{
-    font-size: 12px;
-  }
-  
-  .friend__column {
-    display: flex; 
-    width: 100%; 
-    align-items: center; /* 수직 중앙 정렬 */
+.friend__column .friend__profile {
+  margin-right: 20px;
 }
 
 .friend__content {
-    flex-direction: column; /* 수직 방향으로 배치 */
+  font-size: 14px;
+  width: 100%;
+}
+
+.friend__content .friend__time {
+  font-size: 12px;
+}
+
+.friend__column {
+  display: flex;
+  width: 100%;
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.friend__content {
+  flex-direction: column; /* 수직 방향으로 배치 */
 }
 
 .friend__info {
-    display: flex;
-    justify-content: space-between; /* 이름과 시간을 양 끝으로 배치 */
-    width: 100%; 
+  display: flex;
+  justify-content: space-between; /* 이름과 시간을 양 끝으로 배치 */
+  width: 100%;
 }
-
 
 .friend__name {
-    margin-right: 10px; /* 이름과 시간 사이의 간격 */
-}
-
-
-/*하단 nav에 대한 수정*/
-.bottom-tabs {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1000;
-    display: flex; 
-    justify-content: center; /* 전체 버튼들을 수평 중앙으로 정렬 */
-    align-items: center;
-    padding: 10px 0; 
-}
-
-.bottom-tabs button {
-    flex-grow: 1; /* 버튼 간의 간격을 동일하게 유지 */
-    text-align: center; 
-}
-
-.bottom-tabs a {
-    display: flex;
-    flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
-    align-items: center;
-    text-decoration: none; 
-    color: black;
+  margin-right: 10px; /* 이름과 시간 사이의 간격 */
 }

@@ -1,87 +1,77 @@
-/* 전체 배경 설정, 다른 css 동일 설정 */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-}
-
 /* container */
 .container {
-    width: 100%;
-    padding: 40px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: none;
-    border: none;
+  width: 100%;
+  padding: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  border: none;
 }
 
 /* 로고 */
 .logo h2 {
-    font-size: 24px;
-    color: black;
-    margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 20px;
+  color: black;
+  margin-bottom: 30px;
 }
 
 /* 로그인 폼 */
 .login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* 입력창 설정 */
 .input-group input {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    background-color: transparent;
-    font-size: 16px;
-    outline: none;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 16px;
+  outline: none;
 }
 
 /* 로그인 및 새로운 카카오계정 만들기 버튼 스타일 */
 .button-group {
-    width: 100%;
-    max-width: 600px; 
-    margin-top: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 15px;
 }
 
-.login-btn, .signup-btn {
-    width: 100%; 
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #E0E0E0;
-    color: #3C1E1E;
+.login-btn,
+.signup-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #3c1e1e;
 }
 
-.login-btn:hover, .signup-btn:hover {
-    background-color: #D3D3D3;
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: rgba(253, 229, 10);
 }
 
 /* 추가 링크 스타일 */
 .additional-links a {
-    font-size: 14px;
-    color: #3C1E1E;
-    text-decoration: none;
-    margin-top: 20px;
-    display: inline-block;
+  font-size: 14px;
+  color: #3c1e1e;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .additional-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

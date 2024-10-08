@@ -1,0 +1,49 @@
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: inherit;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  position: relative;
+  margin: 10px;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-top: 75px; /* 고정된 header와 겹치는 것을 방지 */
+  padding-bottom: 75px; /* 고정된 bottom-tabs와 겹치는 것을 방지 */
+}
+
+/*하단 nav에 대한 수정*/
+.bottom-tabs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* 전체 버튼들을 수평 중앙으로 정렬 */
+  align-items: center;
+  padding: 10px 0;
+}
+
+/*버튼에 대한 수정*/
+.bottom-tabs button {
+  all: unset;
+  flex-grow: 1; /* 버튼 간의 간격을 동일하게 유지 */
+  text-align: center;
+}
+
+.bottom-tabs a {
+  display: flex;
+  flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
