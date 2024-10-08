@@ -1,0 +1,42 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 각 상태별 친구 이름 및 아이콘 조정 */
+.friends__pongheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.friends__pongheader svg {
+  /* 아이콘 사이즈 지정 */
+  width: 30px;
+}
+
+.toggle {
+  display: none; /* 체크박스 숨김 */
+}
+
+/* 체크박스가 체크된 경우 contents를 숨깁니다. */
+.toggle:checked ~ .contents {
+  display: none; /* 체크된 경우 내용 숨김 */
+}
+
+/* 체크박스가 체크되지 않은 경우 contents를 보여줍니다. */
+.toggle:not(:checked) ~ .contents {
+  display: block; /* 체크 해제된 경우 내용 표시 */
+}
+
+/* 기본적으로 contents는 보이는 상태로 설정합니다. */
+.contents {
+  display: block; /* 기본적으로 표시 */
+}
+
+/* 아이콘 회전 */
+.toggle:checked + .toggleLabel svg {
+  transform: rotate(180deg); /* 체크된 경우 아이콘 회전 */
+}

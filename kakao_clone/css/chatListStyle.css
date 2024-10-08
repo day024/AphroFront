@@ -13,15 +13,6 @@
   margin-bottom: 10px;
 }
 
-.friend .friend__column {
-  display: flex;
-  align-items: center;
-}
-
-.friend__column .friend__profile {
-  margin-right: 20px;
-}
-
 .friend__content {
   font-size: 14px;
   width: 100%;
@@ -35,10 +26,6 @@
   display: flex;
   width: 100%;
   align-items: center; /* 수직 중앙 정렬 */
-}
-
-.friend__content {
-  flex-direction: column; /* 수직 방향으로 배치 */
 }
 
 .friend__info {

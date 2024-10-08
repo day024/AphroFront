@@ -1,0 +1,97 @@
+.header {
+  background: none;
+}
+
+body {
+  background-image: url("C:/정다영/＃sju/study/kakao_clone/img/bg_img.jpg");
+  background-size: cover; /* 배경 이미지를 화면 크기에 맞게 조정 */
+  background-position: center; /* 배경 이미지를 중앙에 위치시킴 */
+}
+
+.size-5 {
+  height: 30px; /* SVG 뷰박스 크기와 일치시킴 */
+  background-color: none;
+  fill: rgba(255, 255, 255);
+}
+
+.header_header-column .size-5 {
+  padding: 5px;
+  fill: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255, 0.5); /* 흰색 외곽선 */
+  border-radius: 50%; /* 원형 외곽선 */
+  display: inline-block; /* 요소가 인라인 요소처럼 처리되도록 */
+}
+
+.friend__profile {
+  width: 150px;
+  height: 150px;
+  margin: 0; /* 모든 방향의 마진을 0으로 설정 */
+  margin-right: 0; /* 오른쪽 마진을 0으로 설정 */
+  border-radius: 38%; /* 프로필 이미지의 모서리를 둥글게 */
+}
+
+.friend__column .friend__profile {
+  margin-right: 0;
+}
+
+/* 이름-상태창 */
+.friend__content .friend__name {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: rgba(255, 255, 255);
+}
+
+.friend__content .friend__status {
+  font-size: 20px;
+  color: rgba(255, 255, 255);
+}
+
+.friends__header {
+  margin-top: 500px;
+  display: flex;
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+}
+
+.friend__content {
+  display: flex;
+  flex-direction: column; /* 이름과 상태창을 세로로 배치 */
+  align-items: center; /* 가로 방향 가운데 정렬 */
+  margin-top: 10px; /* 프로필 사진과 이름 간의 간격 */
+}
+
+.line {
+  border-top: 2px solid rgba(255, 255, 255, 0.5); /* 선의 두께와 색상을 설정 */
+  margin: 80px 0; /* 위와 아래의 간격 설정 */
+}
+
+.bottom-profile {
+  background-color: none;
+  display: flex;
+  justify-content: center; /* 전체 버튼들을 수평 중앙으로 정렬 */
+  align-items: center;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.bottom-profile svg.size-5 {
+  width: 40px; /* 원하는 너비 */
+  height: 50px; /* 원하는 높이 */
+  margin-bottom: 10px;
+}
+
+/*버튼에 대한 수정*/
+.bottom-profile button {
+  all: unset;
+  flex-grow: 1; /* 버튼 간의 간격을 동일하게 유지 */
+  text-align: center;
+}
+
+.bottom-profile a {
+  display: flex;
+  flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
+  align-items: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255);
+}

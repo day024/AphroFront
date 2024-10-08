@@ -1,140 +1,123 @@
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-}
-
-body{
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
-
-.back-button {
-    margin-right: 10px;
-}
-
-.icon {
-    width: 24px;
-    height: 24px;
-    color: #333;
+/* 전역 설정 */
+body {
+  background-color: rgba(198, 212, 223);
 }
 
 .chat-title {
-    flex-grow: 1;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
 }
 
-.chat-container {
-    flex-grow: 1;
-    padding: 10px;
+/* 버튼 */
+button {
+  padding: 10px 15px;
+  background-color: rgba(204, 204, 204);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-/*채팅창 내용*/
-.chat-message {
-    margin: 10px 0;
+button:hover {
+  background-color: rgba(158, 158, 158);
 }
 
-.you {
-    align-self: flex-start;
-}
-
-.me {
-    align-self: flex-end;
-    text-align: right;
-}
-
-.message {
-    padding: 10px;
-    border-radius: 8px;
-    max-width: 75%;
-    display: inline-block;
-}
-
-.you .message {
-    background-color: #E1F5FE;
-    color: #000;
-}
-
-.me .message {
-    background-color: #C8E6C9;
-    color: #000;
-}
-
-.time {
-    font-size: 12px;
-    color: #888;
-    margin-top: 4px;
-}
-
-/*채팅 입력창*/
+/* 채팅 입력창 */
 .chat-input {
-    display: flex;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
 }
 
 .chat-input input {
-    flex: 1; 
-    height: 50px; 
-    padding: 10px; 
-    border-radius: 5px;
-    border: 1px solid #ccc; 
-    margin-right: 10px; 
+  flex: 1;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
 }
 
 #message-input {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 0 10px;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
 }
 
-/*아이콘 사이즈 임의 정함 추후 수정*/
+.chat-message {
+  margin: 10px;
+}
+
+.chat-friendProfile {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px; /* 여백 추가 */
+}
+
+.friend__profile-img {
+  width: 50px; /* 프로필 사진의 크기 설정 */
+  height: 50px; /* 프로필 사진의 크기 설정 */
+  border-radius: 38%; /* 둥근 프로필 사진 */
+  margin-right: 5px; /* 프로필 사진과 메시지 간의 간격 */
+}
+
+/* 메시지 스타일 */
+.you {
+  align-self: flex-start;
+}
+
+.me {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 90%;
+  display: inline-block;
+}
+
+.you .message {
+  background-color: white;
+  color: #000;
+}
+
+.me .message {
+  background-color: rgba(253, 229, 0);
+  color: #000;
+}
+
+/* 타임스탬프 */
+.time {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* 아이콘 */
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
 .size-5 {
-    width: 20px; 
-    height: 20px; 
+  width: 24px; /* SVG 뷰박스 크기와 일치시킴 */
+  height: 24px; /* SVG 뷰박스 크기와 일치시킴 */
 }
 
-button {
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-}
-
-body{
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
-.chat-input {
-    position: fixed;
-    bottom: 0;
-    left: 0; 
-    width: 100%; 
-    background-color: white; 
-    z-index: 1000;
+/* 백 버튼 */
+.back-button {
+  margin-right: 10px;
 }

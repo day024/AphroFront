@@ -1,32 +1,89 @@
 /* Header */
 .header {
   position: fixed;
+  height: 70px;
   top: 0;
   left: 0;
   right: 0;
-  margin: inherit;
+  padding: 10px;
   display: flex;
   background-color: white;
   justify-content: space-between;
+  font-family: "Nanum Gothic", sans-serif;
   align-items: center;
+  z-index: 1000;
 }
 
 body {
   position: relative;
-  margin: 10px;
   font-family: "Nanum Gothic", sans-serif;
-  padding-top: 75px; /* 고정된 header와 겹치는 것을 방지 */
-  padding-bottom: 75px; /* 고정된 bottom-tabs와 겹치는 것을 방지 */
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 30px;
+}
+.friends__AD {
+  display: flex;
+  padding: 20px;
+}
+
+/* 프로필 사진창관련 */
+.friend .friend__profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 38%; /* 프로필 이미지의 모서리를 둥글게 */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.friend__profile {
+  width: 50px;
+  height: 50px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend__column .friend__profile {
+  margin-right: 20px;
+}
+
+/* 친구 이름-상태창 */
+.friend__content .friend__name {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.friend__content {
+  font-size: 14px;
+}
+
+.friend__content .friend__status {
+  font-size: 12px;
+}
+
+.friends__star,
+.friends__channel,
+.friends__brithday {
+  border-bottom: 1px solid #e0e0e0; /* 하단 경계선 */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /*하단 nav에 대한 수정*/
 .bottom-tabs {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: white;
-  z-index: 1000;
   display: flex;
   justify-content: center; /* 전체 버튼들을 수평 중앙으로 정렬 */
   align-items: center;
