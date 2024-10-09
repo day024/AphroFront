@@ -54,6 +54,16 @@ button:hover {
   margin: 0 10px;
 }
 
+/* 채팅 내용 창 */
+.chat-container {
+  display: flex;
+  flex-direction: column-reverse;
+  height: calc(
+    100vh - 80px
+  ); /* 화면의 높이에서 입력창과 헤더 부분을 제외한 높이 */
+  overflow-y: auto;
+}
+
 .chat-message {
   margin: 10px;
 }
@@ -79,6 +89,10 @@ button:hover {
 .me {
   align-self: flex-end;
   text-align: right;
+}
+
+.chat-name {
+  padding-bottom: 5px;
 }
 
 .message {
